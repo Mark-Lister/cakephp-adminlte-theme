@@ -1,0 +1,28 @@
+.input__marker {background-color: #52b3d9;
+  color: #fafafa;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background-color: #111;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px #585858;
+  display: block;
+  font-size: 12px;
+  padding: 4px 6px;
+  position: absolute;
+  -webkit-transform: translate(5%, -70%);
+          transform: translate(5%, -70%);
+  transition: top 0.1s ease 0s, left 0.1s ease 0s;
+  white-space: nowrap;
+  width: auto;
+  z-index: 9999;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
